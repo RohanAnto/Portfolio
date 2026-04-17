@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    padding: 10px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(9, 7, 48);
+
+    color: white;
+}
+
+.nav-menu {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav>div>h2 {
+    font-size: 26px;
+}
+
+.nav-menu>div>a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.nav-menu>div>a:hover {
+    color: rgb(213, 29, 219);
+    transition: all 1s;
+}
+
+
+
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+.dropbtn i {
+    margin-left: 6px;
+    font-size: 0.8em;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(12, 10, 50, 0.95);
+    width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+.dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+}
+.dropdown-content a:hover {
+    background-color: rgba(213, 29, 219, 0.15);
+    color: rgb(213, 29, 219);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    color: rgb(213, 29, 219);
+}
+
+
+
+
+
+
+
+
+.about-section {
+    padding: 0 100px;
+    background: linear-gradient(180deg, rgba(16, 41, 94, 0.85), rgba(1, 5, 41, 0.9));
+    color: #fff;
+}
+
+.about-container {
+    padding: 80px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.passport {
+
+    width: 260px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+.about-right {
+    width: 500px;
+}
+
+.about-right h2 {
+    margin: 0 0 16px 0;
+    font-size: 3rem;
+    letter-spacing: 0.6px;
+    color: #ffffff;
+}
+
+.about-para {
+    line-height: 1.6;
+    max-width: 800px;
+    font-size: 1.45rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 18px;
+}
+
+
+.about-cta {
+    margin-top: 12px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.35);
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.14);
+    transition: all 0.25;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    border-color: rgba(213, 29, 219, 0.85);
+}
+
+
+
+
+
+
+
+
+.skills-block {
+    padding: 0 30px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 50px;
+
+}
+
+.skills-block h3 {
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    padding-bottom: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 40px;
+    justify-items: center;
+    align-items: center;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+.skill-card i {
+    font-size: 3.5rem;
+    margin-bottom: 12px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.skill-card h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0;
+}

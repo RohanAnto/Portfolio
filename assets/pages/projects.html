@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Projects page</title>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Page stylesheet -->
+    <link rel="stylesheet" href="../css/projects.css">
+</head>
+
+<body>
+
+    <nav>
+        <div>
+      <h2><a href="../../index.html" style="text-decoration: none; color: white;" >Portfolio</a></h2>
+        </div>
+        <div class="nav-menu">
+            <div>
+                <a href="../../index.html">Home</a>
+                <a href="../pages/about.html">About</a>
+                <a href="../pages/contact.html">Contact</a>
+                <a href="../pages/projects.html">Projects</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Pages <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../../index.html">Home</a>
+                        <a href="../pages/about.html">About</a>
+                        <a href="../pages/contact.html">Contact</a>
+                        <a href="../pages/projects.html">Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <main class="projects-page">
+        <header class="projects-hero">
+            <h1>My Projects</h1>
+            <p>Here are a few of my recent works — from academic research to front-end experiments and
+                creative builds.</p>
+        </header>
+
+        <section>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="../images/p1.png" alt="thumbnail" class="project-thumb">
+                    <div class="project-body">
+                        <h3>Traffic Sign Reconstruction</h3>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>YOLO</span>
+                            <span>GAN</span>
+                        </div>
+                        <p class="project-desc">
+                            A computer vision project focused on detecting, reconstructing, and restoring damaged or
+                            occluded traffic signs using YOLO, Vision Transformers, and GAN-based enhancement.
+                        </p>
+                        <div class="project-actions">
+                            <a class="btn outline" href="#">Repo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <img src="../images/portfolio.png" alt="Project 2 thumbnail" class="project-thumb">
+                    <div class="project-body">
+                        <h3>Portfolio Website</h3>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Design</span>
+                        </div>
+                        <p class="project-desc">
+                            A responsive portfolio website showcasing my work, skills, and contact information. Designed
+                            for performance and aesthetics using pure HTML and CSS.
+                        </p>
+                        <div class="project-actions">
+                            <a class="btn" href="../../index.html">Live</a>
+                            <a class="btn outline" href="#">Repo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <img src="../images/p3.png" alt="Project 3 thumbnail" class="project-thumb">
+                    <div class="project-body">
+                        <h3>Smart Parking System</h3>
+                        <div class="project-tech">
+                            <span>IoT</span>
+                            <span>C++</span>
+                            <span>Sensors</span>
+                        </div>
+                        <p class="project-desc">
+                            An IoT-based prototype that manages parking slots in real-time using ultrasonic sensors,
+                            Arduino, and a simple web interface for slot monitoring.
+                        </p>
+                        <div class="project-actions">
+                            <a class="btn outline" href="#">Repo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 (Weather App) -->
+                <article class="project-card">
+                    <img src="../images/p4.png" alt="Weather App thumbnail" class="project-thumb">
+                    <div class="project-body">
+                        <h3>Weather App</h3>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>API</span>
+                        </div>
+                        <p class="project-desc">
+                            A clean and interactive weather application that displays real-time weather data fetched
+                            from an external API. Designed with a modern UI using only HTML and CSS for structure and
+                            styling.
+                        </p>
+                        <div class="project-actions">
+                            <a class="btn outline" href="#">Repo</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

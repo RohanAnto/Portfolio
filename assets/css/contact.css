@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(180deg, rgba(16, 41, 94, 0.85), rgba(1, 5, 41, 0.9));
+    color: #fff;
+}
+
+
+
+
+nav {
+    padding: 10px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(9, 7, 48);
+
+    color: white;
+}
+
+.nav-menu {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav>div>h2 {
+    font-size: 26px;
+}
+
+.nav-menu>div>a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.nav-menu>div>a:hover {
+    color: rgb(213, 29, 219);
+    transition: all 1s;
+}
+
+
+
+
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+.dropbtn i {
+    margin-left: 6px;
+    font-size: 0.8em;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(12, 10, 50, 0.95);
+    width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+.dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+}
+.dropdown-content a:hover {
+    background-color: rgba(213, 29, 219, 0.15);
+    color: rgb(213, 29, 219);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    color: rgb(213, 29, 219);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Layout container */
+.contact-page {
+    width: 1100px;
+    margin: 60px auto;
+}
+
+.contact-wrap {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+/* Contact Form Card */
+.contact-card {
+    border-radius: 12px;
+    padding: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+}
+
+.contact-card>h1 {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+}
+
+.contact-card>p {
+    margin: 0 0 18px 0;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.6;
+}
+
+/* Form styling */
+.contact-form {
+    display: grid;
+    gap: 14px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+    display: block;
+    margin-bottom: 6px;
+}
+
+.input,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 140px;
+}
+
+
+/* Form Buttons */
+.btn {
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s ease;
+    background: linear-gradient(90deg, rgba(213, 29, 219, 0.95), rgba(105, 45, 217, 0.88));
+    border: none;
+}
+
+/* Sidebar Card */
+.side-card {
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+}
+
+.side-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+}
+
+.download-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px 12px;
+    border-radius: 10px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+}
+
+.download-link i {
+    font-size: 1.2rem;
+}
+
+.social-list {
+    display: flex;
+    gap: 12px;
+    margin: 10px 0;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.other-info h4 {
+    margin: 8px 0 6px 0;
+    font-size: 1rem;
+}
+
+.other-info p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.95rem;
+}

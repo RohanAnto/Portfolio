@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Contact Page Styles -->
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+    <nav>
+        <div>
+        <h2><a href="../../index.html" style="text-decoration: none; color: white;" >Portfolio</a></h2>
+        </div>
+        <div class="nav-menu">
+            <div>
+                <a href="../../index.html">Home</a>
+                <a href="../pages/about.html">About</a>
+                <a href="../pages/contact.html">Contact</a>
+                <a href="../pages/projects.html">Projects</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Pages <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../../index.html">Home</a>
+                        <a href="../pages/about.html">About</a>
+                        <a href="../pages/contact.html">Contact</a>
+                        <a href="../pages/projects.html">Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contact-page">
+        <div class="contact-wrap">
+            <section class="contact-card">
+                <h1>Get in Touch</h1>
+                <p>
+                    Have a project, question, or opportunity? Drop a message below — I usually reply within a few days.
+                </p>
+                <form class="contact-form" action="#">
+                    <div>
+                        <label>Name</label>
+                        <input class="input" type="text" placeholder="Your full name" required>
+                    </div>
+
+                    <div>
+                        <label>Email</label>
+                        <input class="input" type="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <div>
+                        <label>Subject</label>
+                        <input class="input" type="text" placeholder="reason">
+                    </div>
+
+                    <div>
+                        <label>Message</label>
+                        <textarea placeholder="Write your message..." required></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </form>
+            </section>
+
+
+            <aside class="side-card">
+                <h3>Contact & Downloads</h3>
+
+
+                <a class="download-link" style="text-decoration: none;" href="../doc/Rohan_Anto_Resume.pdf" download>
+                    <i class="fa-solid fa-download"></i>
+                    <span>Download Resume</span>
+                </a>
+
+
+                <div>
+                    <h4>Social Links</h4>
+                    <div class="social-list">
+                        <a class="social-link" href="#">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a class="social-link" href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a class="social-link" href="#">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a class="social-link" href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="other-info">
+                    <h4>Other Info</h4>
+                    <p>Location: India</p>
+                    <p>Open to remote roles</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+</body>
+
+</html>
