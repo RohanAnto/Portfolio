@@ -5,7 +5,7 @@ body {
 
 
 header {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../images/back.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@ header {
 }
 
 .header-texts>p {
-    width: 600px;
+    max-width: 600px;
     font-size: 18px;
 }
 
@@ -40,7 +40,8 @@ nav {
 }
 
 .nav-menu {
-    width: 500px;
+    display: flex;
+    gap: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -75,10 +76,12 @@ nav>div>h2 {
     font-weight: 600;
     font-size: 20px;
 }
+
 .dropbtn i {
     margin-left: 6px;
     font-size: 0.8em;
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -88,6 +91,7 @@ nav>div>h2 {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
     z-index: 10;
 }
+
 .dropdown-content a {
     color: white;
     padding: 10px 16px;
@@ -95,13 +99,16 @@ nav>div>h2 {
     display: block;
     font-size: 18px;
 }
+
 .dropdown-content a:hover {
     background-color: rgba(213, 29, 219, 0.15);
     color: rgb(213, 29, 219);
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 .dropdown:hover .dropbtn {
     color: rgb(213, 29, 219);
 }
@@ -128,4 +135,105 @@ nav>div>h2 {
 
 .header-texts>button i {
     margin-right: 10px;
+}
+
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+
+    .header-texts {
+        padding: 10px 5%;
+    }
+
+    /* NAVBAR */
+    nav {
+        padding: 10px 5%;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-menu>div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nav-menu>div>a {
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .dropdown>a {
+        font-size: 14px;
+    }
+
+
+    .dropdown-content {
+        position: absolute;
+ 
+        width: 75px;
+        right: 0;
+
+    }
+
+    .dropdown {
+        position: relative;
+ 
+    }
+
+
+    .dropdown-content a {
+        font-size: 14px;
+ 
+        padding: 8px 12px;
+
+    }
+
+    .dropbtn {
+        font-size: 14px;
+
+    }
+
+    /* HEADER */
+    .header-texts {
+        padding: 10px;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .header-texts>h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-texts>h2 {
+        font-size: 1.2rem;
+    }
+
+    .header-texts>p {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    /* BUTTONS */
+    .header-texts>button {
+        width: 100%;
+        font-size: 16px;
+    }
 }

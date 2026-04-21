@@ -20,7 +20,8 @@ nav {
 }
 
 .nav-menu {
-    width: 500px;
+    display: flex;
+    gap: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -117,7 +118,7 @@ nav>div>h2 {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 24px;
 }
 
@@ -193,4 +194,92 @@ nav>div>h2 {
 .btn.outline {
     background: transparent;
     border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+
+    .header-texts {
+        padding: 10px 5%;
+    }
+
+    /* NAVBAR */
+    nav {
+        padding: 10px 5%;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-menu>div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nav-menu>div>a {
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .dropdown>a {
+        font-size: 14px;
+    }
+
+
+    .dropdown-content {
+        position: absolute;
+        /* ✅ FIX */
+        width: 75px;
+        right: 0;
+        /* align nicely */
+    }
+
+    .dropdown {
+        position: relative;
+        /* ✅ required for absolute child */
+    }
+
+
+    .dropdown-content a {
+        font-size: 14px;
+        /* 👈 adjust for mobile */
+        padding: 8px 12px;
+        /* tighter spacing */
+    }
+
+    .dropbtn {
+        font-size: 14px;
+        /* match other nav links */
+    }
+    
+
+    .projects-page {
+        padding: 20px 5%;
+    }
+
+    .projects-hero h1 {
+        font-size: 2rem;
+    }
+
+    .projects-hero p {
+        font-size: 0.95rem;
+    }
+
+    .project-body {
+        padding: 14px;
+    }
+
+    .project-desc {
+        font-size: 0.9rem;
+    }
 }
