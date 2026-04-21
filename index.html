@@ -14,6 +14,16 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <script>
+        document.addEventListener("click", function (e) {
+            const dropdown = document.querySelector(".dropdown");
+            const content = document.querySelector(".dropdown-content");
+
+            if (!dropdown.contains(e.target)) {
+                content.classList.remove("show");
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -48,13 +58,14 @@
             <h1>Rohan Anto D</h1>
             <p>I’m a fresher with a B.Tech in Information Technology, enthusiastic about coding, problem-solving, and
                 exploring emerging technologies to grow as a professional developer.</p>
-            
-                <button><a style="text-decoration: none; color: white;;" href="./assets/doc/Rohan_Anto_Resume.pdf" download>
+
+            <button><a style="text-decoration: none; color: white;;" href="./assets/doc/Rohan_Anto_Resume.pdf" download>
                     <i class="fa-solid fa-download fa-2xl"></i>
                     Download Resume</a>
-                </button>
-            
-            <button><a style="text-decoration: none; color: white;;" href="./assets/pages/contact.html">Contact Me</a></button>
+            </button>
+
+            <button><a style="text-decoration: none; color: white;;" href="./assets/pages/contact.html">Contact
+                    Me</a></button>
         </div>
     </header>
 
